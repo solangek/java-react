@@ -28,8 +28,8 @@ The template depends on:
   tomcat 9.0.45 that can be downloaded from https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz.
   In order to point to your own installation of tomcat, edit configuration in IntelliJ change the application server.
 * your local installation of nodejs, this template is based on nodejs v18.15.0 (npm 9.5.0). You can download it from https://nodejs.org/en/download.
-* your local installation of java (check File->Project Structure->Platform SDK). You can add SDK from IntelliJ by cliking on  File->Project Structure->Platform Settings-> +).
-  This template is based on version 19, you can download it from https://jdk.java.net/19/).
+* your local installation of java (select one SDK at: File->Project Structure->Platform SDK). You can add SDK from IntelliJ by cliking on  File->Project Structure->Platform Settings-> +).
+  This template is based on version 19, you can also download it from https://jdk.java.net/19/).
 
 ###  source files
 The template includes:
