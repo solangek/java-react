@@ -4,9 +4,12 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-/* Your servlet should be available at "/java_react_war/api/highscores"
-assuming you don't modify the application's context path.
- */
+/* You can delete this comment before submission - it's only here to help you get started.
+Your servlet should be available at "/java_react_war/api/highscores"
+assuming you don't modify the application's context path (/java_react_war).
+on the client side, you can send request to the servlet using:
+fetch("/java_react_war/api/highscores")
+*/
 
 @WebServlet(name = "ServletApi", value = "/api/highscores")
 public class ApiServlet extends HttpServlet {
