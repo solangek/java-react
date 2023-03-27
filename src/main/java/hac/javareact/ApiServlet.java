@@ -4,7 +4,7 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-@WebServlet(name = "ServletApi", value = "/api")
+@WebServlet(name = "ServletApi", value = "/api/highscores")
 public class ApiServlet extends HttpServlet {
     /**
      *
