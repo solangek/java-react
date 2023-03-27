@@ -4,6 +4,8 @@
 
 ## Explanations
 
+(Explain here your project)
+
 ## How to use this template
 This is the template for a project where front-end and back-end are separated.
 The front-end is a React application, the back-end is a Java Web application
@@ -34,7 +36,7 @@ The template includes:
 * a Java Web template with an empty Servlet to implement your server side REST API under the src/main/java folder
 * a React template under the reac-client folder, with an initialized npm project.
 
-### In order to run your exercise you:
+## In order to run your exercise you:
 * run the server side; with IntelliJ configuration at the upper right (created above)
 * run the client side: open the terminal: `cd react-client`, `npm install`,  run with the command `npm start`
 
