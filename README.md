@@ -11,16 +11,17 @@ This is the template for a project where front-end and back-end are separated.
 The front-end is a React application, the back-end is a Java Web application
 including a Servlet for REST API endpoints.
 
-### initializing IntelliJ
-In case you have a .idea folder in the project, you should close the project,
-delete the .idea folder, re-open the pronect and follow the instructions below.
-
 ### Create a run configuration for the Server
 * In IntelliJ, go to Run->Edit Configurations
 * Click on the + sign and select Tomcat Server -> Local
 * In the Tomcat Server Settings, select your local installation of tomcat (you can download it from https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz)
 * In the Deployment tab, select the war file to deploy (it should be the war file in the target folder of your project), IntelliJ should automatically detect it and display a "Fix" button. Click on it.
 * Click on the OK button
+
+### initializing IntelliJ
+In case you get into trouble with IntelliJ, you should close the project,
+delete the .idea folder, re-open the project and follow the instructions above to
+recreate a run configuration.
 
 ###  dependencies
 The template depends on:
