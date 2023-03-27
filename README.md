@@ -4,28 +4,42 @@
 
 ## Explanations
 
-## How to use this template 
+## How to use this template
 This is the template for a project where front-end and back-end are separated.
-The front-end is a React application, the back-end is a Java Web application 
+The front-end is a React application, the back-end is a Java Web application
 including a Servlet for REST API endpoints.
 
+### initializing IntelliJ
+In case you have a .idea folder in the project, you should close the project,
+delete the .idea folder, re-open the pronect and follow the instructions below.
+
+### Create a run configuration for the Server
+* In IntelliJ, go to Run->Edit Configurations
+* Click on the + sign and select Tomcat Server -> Local
+* In the Tomcat Server Settings, select your local installation of tomcat (you can download it from https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz)
+* In the Deployment tab, select the war file to deploy (it should be the war file in the target folder of your project), IntelliJ should automatically detect it and display a "Fix" button. Click on it.
+* Click on the OK button
+
+###  dependencies
 The template depends on:
 * your local installation of tomcat, this template uses
-tomcat 9.0.45 that can be downloaded from https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz.
-In order to point to your own installation of tomcat, edit configuration in IntelliJ change the application server.
+  tomcat 9.0.45 that can be downloaded from https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz.
+  In order to point to your own installation of tomcat, edit configuration in IntelliJ change the application server.
 * your local installation of nodejs, this template is based on nodejs v18.15.0 (npm 9.5.0). You can download it from https://nodejs.org/en/download.
-* your local installation of java (check File->Project Structure->Platform SDK). You can add SDK from IntelliJ: File->Project Structure->Platform Settings-> +). 
-This template is based on version 19, you can download it from https://jdk.java.net/19/).
+* your local installation of java (check File->Project Structure->Platform SDK). You can add SDK from IntelliJ by cliking on  File->Project Structure->Platform Settings-> +).
+  This template is based on version 19, you can download it from https://jdk.java.net/19/).
+
+###  source files
 The template includes:
 * a Java Web template with an empty Servlet to implement your server side REST API under the src/main/java folder
 * a React template under the reac-client folder, with an initialized npm project.
 
 ### In order to run your exercise you:
-* run the server side; with IntelliJ configuration at the upper right (or open the terminal and run `/<path to your tomcat>/bin/catalina.sh run`)
+* run the server side; with IntelliJ configuration at the upper right (created above)
 * run the client side: open the terminal: `cd react-client`, `npm install`,  run with the command `npm start`
 
 Then browse:
 * your react client at http://localhost:3000
 * your server will be available at http://localhost:8080/api/highscores (you have of course to implement the REST API).
-Note that you should never specify the host and port in your React code! (use 'api/' instead of 'http://localhost:8080/api/')
+  Note that you should never specify the host and port in your React code! (use 'api/' instead of 'http://localhost:8080/api/')
 
