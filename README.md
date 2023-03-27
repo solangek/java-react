@@ -16,7 +16,9 @@ including a Servlet for REST API endpoints.
 * Click on the + sign and select Tomcat Server -> Local
 * In the Tomcat Server Settings, select your local installation of tomcat (you can download it from https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz)
 * In the Deployment tab, select the java-react:war file to deploy (the war file in the target folder of your project), IntelliJ should automatically detect it and display a "Fix" button. Click on it.
+* uncheck the "After launch: Open in browser" checkbox (we don't want to open the browser when we run the server, it's a REST API server)
 * Click on the OK button
+
 
 ### initializing IntelliJ
 In case you get into trouble with IntelliJ, you should close the project,
